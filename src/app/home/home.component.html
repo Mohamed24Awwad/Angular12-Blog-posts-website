@@ -1,0 +1,36 @@
+
+<!-- ----------------------------- Directives ------------------------------ -->
+
+<div>
+    <h1>Course List</h1>
+    <div>
+        <ul *ngFor = 'let course of courses '>
+             <li>{{course}}</li>
+        </ul>
+    </div>
+</div>
+
+
+
+<table>
+    <tr>
+        <td></td>
+    </tr>
+</table>
+
+
+<!-- -------------------------- Template variable -------------------------- -->
+    <!-- ------------------ <h2>Course : {{courseTitle}}</h2> ------------------ -->
+    <!-- ---------------- <img class="img-ang" src={{imgUrl}}> ----------------- -->
+    <div>{{nameVal}}</div>
+<!-- -------------------------- Attribute Binding -------------------------- -->
+    <!-- ------------- <h3 [textContent]="courses">course : </h3> -------------- -->
+
+    <!-- ---------------------------- Class Binding ---------------------------- -->
+    <button [style.backgroundColor]="isActive? 'red' : 'green'">Button</button>
+
+    <!-- ---------------------------- Event Binding ---------------------------- -->
+    <button (click)="methodName()">welcome message</button>
+
+    <!-- ---------------------------- Event Filter ----------------------------- -->
+    <input  #firstName (keyup) ="onKeyPress(firstName)"type="text">

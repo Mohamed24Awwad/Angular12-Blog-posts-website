@@ -1,0 +1,24 @@
+//To create a paln new project
+------------------------------
+>>ng new my-first-project
+>>cd my-first-project
+>>ng serve
+
+//To build your app
+-------------------
+>>ng build
+
+// to run the angular server
+----------------------------
+ng s      or ng serve
+
+//to generate a sevice folder and file
+--------------------------------------
+ng g s service/api           
+
+//to generate a component
+-------------------------
+ng g c home // component name 
+
+
+
